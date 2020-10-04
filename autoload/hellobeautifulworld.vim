@@ -9,8 +9,8 @@ let g:loaded_hellobeautifulworld = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! hellobeautifulworld#helloworld()
-	echo "Hello world!"
+function! hellobeautifulworld#helloworld(name)
+	echo "Hi!".a:name."! How's going?"
 endfunction
 
 let &cpo = s:save_cpo

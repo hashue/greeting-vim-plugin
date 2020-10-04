@@ -9,7 +9,7 @@ let g:loaded_hellobeautifulworld = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-nmap z :call hellobeautifulworld#helloworld()<CR>
+command! -nargs=1 Hi call hellobeautifulworld#helloworld(<f-args>)
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
