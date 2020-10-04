@@ -1,9 +1,3 @@
-scriptencoding utf-8
-
-
-
-let s:save_cpo = &cpo
-set cpo&vim
 
 function! greeting#hello(name)
 	echo "Hi!".a:name."! How's going?"
