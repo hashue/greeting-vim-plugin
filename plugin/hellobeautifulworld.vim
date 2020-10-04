@@ -1,0 +1,16 @@
+scriptencoding utf-8
+
+if exsists('g:loaded_hellobeautifulworld')
+	finish
+endif
+
+let g:loaded_hellobeautifulworld = 1
+
+let s:save_cpo = &cpo
+set cpo&vim
+
+nmap z :call hellobeautifulworld#helloworld()<CR>
+
+let &cpo = s:save_cpo
+unlet s:save_cpo
+
